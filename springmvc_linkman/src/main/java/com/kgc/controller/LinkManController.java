@@ -21,6 +21,7 @@ public class LinkManController {
     @RequestMapping("/findAll")
     public Result findAll(){
         List<LinkMan> all = linkManService.findAll();
+		System.out.println("我是你爹");
         return new Result(true,"查询成功",all);
     }
 
