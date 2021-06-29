@@ -22,6 +22,7 @@ public class LinkManController {
     public Result findAll(){
         List<LinkMan> all = linkManService.findAll();
 		System.out.println("我是你爹");
+System.out.println("你是我儿");
         return new Result(true,"查询成功",all);
     }
 
